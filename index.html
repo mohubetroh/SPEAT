@@ -1,115 +1,143 @@
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=1241">
-  
-  <title>Cyberindo Aditama | Speedtest </title>
-  <link rel="shortcut icon" href="https://cbn.id/favicon.ico" type="image/x-icon" />
-  <link rel="icon" type="image/png" href="https://cbn.id/favicon-32x32.png" sizes="32x32">
-  <link rel="icon" type="image/png" href="https://cbn.id/favicon-16x16.png" sizes="16x16">
-  <link rel="mask-icon" href="https://cbn.id/safari-pinned-tab.svg" color="#5bbad5">
-  <link rel="stylesheet" href="https://cbn.id/css/style.css" />
-</head>
+<html>
+<style>
+/* login siip */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+button:hover {
+    opacity: 0.8;
+}
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+.container {
+    padding: 16px;
+}
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+</style>
 <body>
-<div class="content-wrapper">
-  <header>
-      <div class="header_wrapper">
-         <div class="header_container clearfix">
-            <div class="header_logo">
-               <a href="https://cbn.id/" title="Cyberindo Aditama"><img src="https://cbn.id/images/default/logo-white.svg" alt="CBN logo"/></a>
-            </div>
-         </div>
-      </div>
-   </header>
-   <section class="white-bg" style="padding-top: 60px; padding-bottom: 120px">
-      <div class="container">
-         <iframe src="https://cbn.speedtestcustom.com/" frameborder="0" width="100%" height="650"></iframe>
-      </div>
-   </section>
-   <div class="push"></div>
-</div>
-<!--get footer template-->
-<footer>
-   <div class="footer_wrapper">
-    <div class="footer_container">
-      <div class="footer_content-top">
-        <div class="container clearfix">
-            <img src="https://cbn.id/images/default/logo-white.svg" height="38" class="footer_logo" />
-            <div class="footer_addr clearfix">
-               <p>
-                  Cyber 2 Tower 33rd Floor<br/>
-                  Jl. HR Rasuna Said X5 No. 13<br/>
-                  Jakarta Selatan, 12950
-               </p>
-               <p>
-                  Tel. <a href="tel:+622129964900" title="CBN Phone">+62 21 29964900</a><br>
-                  Fax. <a href="tel:+62215742481" title="CBN Fax">+62 21 5742481</a>
-               </p>
-            </div><!-- /.footer_addr -->
-            
-            <div class="footer_callcenter">
-               <a href="tel:1500780" title="CBN 24 hours call center">
-                  <picture>
-                     <source type="image/svg+xml" srcset="https://cbn.id/images/default/cbn-24-hours-call-center.svg"/>
-                     <img alt="fallback logo" src="https://cbn.id/images/default/cbn-24-hours-call-center.png" />
-                  </picture>
-               </a>
-            </div>
-            <div class="footer_partner">
-               <div class="footer_partner-title">Our Partner</div>
-               <div class="footer_partner-lists">
-                  <div class="footer_partner-list">
-                     <a class="footer_partner-link" href="https://www.elevenia.co.id/" target="_blank">
-                        <img src="https://cbn.id/images/default/logo-elevania.png" alt="" class="footer_partner-img">
-                     </a>
-                  </div>
-               </div>
-            </div>
-            <ul class="footer_menu clearfix">
-               <li><a href="https://webmail.cbn.id/" target="_blank" title="CBN Webmail">WEBMAIL</a></li>
-               <li><a href="https://cbn.id/news/" title="CBN News">NEWS</a></li>
-               <li><a href="http://new.cbn.net.id/careers/" target="_blank">CAREER</a></li>
-            </ul>
-        </div><!-- /.container -->
-      </div>
-      <!-- /.footer_content-top -->
-      <div class="footer_content-bottom">
-        <div class="container">
-          <div class="row">
-            <div class="col-xs-12 col-md-4">
-              <p class="footer_meta-copy">Copyright &copy; 2016. Cyberindo Aditama. All Right Reserved.</p>
-            </div>
-            <!-- /.col -->
-            <div class="col-xs-12 col-md-4">
-              <ul class="footer_meta-link">
-                <li><a href="https://cbn.id/legal-disclaimer.html">Legal Disclaimer</a></li>
-                <li><a href="https://cbn.id/sitemap.html">Sitemap</a></li>
-              </ul>
-            </div>
-            <!-- /.col -->
-            <div class="col-xs-12 col-md-4">
-              <ul class="footer_meta-medsos">
-                <li><a href="https://www.facebook.com/di.CBN/" target="_blank" title="CBN Facebook"><span class="ion-social-facebook"></span></a></li>
-                <li><a href="https://twitter.com/di_cbn?lang=en" target="_blank" title="CBN Twitter"><span class="ion-social-twitter"></span></a></li>
-                <li><a href="https://www.instagram.com/di_cbn/" target="_blank" title="CBN Instagram"><span class="ion-social-instagram-outline"></span></a></li>
-                <li><a href="https://www.youtube.com/channel/UC1XXn3GqPIqpBPPLMNLsPTg" target="_blank" title="CBN Youtube"><span class="ion-social-youtube"></span></a></li>
-              </ul>
-            </div>
-            <!-- /.col -->
-          </div>
-          <!-- /.row -->
-        </div>
-        <!-- /.container -->
-      </div>
-      <!-- /.footer_content-bottom -->
+<h2>
+Login dulu om biar nyus<br />
+tesKecepatan INTERNET.com</h2>
+<button onclick="document.getElementById('id01').style.display='block'" style="width: auto;">Login</button>
+<div class="modal" id="id01">
+  <form action="https://speedtest.cbn.net.id/" class="modal-content animate">
+    <div class="imgcontainer">
+      <span class="close" onclick="document.getElementById('id01').style.display='none'" title="Close Modal">×</span>
+      <img alt="Avatar" class="avatar" src="img_avatar2.png" />
     </div>
-    <!-- /.footer_container -->
-  </div>
-  <!-- /.footer_wrapper -->
-</footer>
-<!--end footer template-->
+<div class="container">
+      <label><b>Username</b></label>
+      <input name="uname" placeholder="Enter Username" required="" type="text" />
+      <label><b>Password</b></label>
+      <input name="psw" placeholder="Enter Password" required="" type="password" />
+      <button type="submit">Login</button>
+      <input checked="checked" type="checkbox" /> Remember me
+    </div>
+<div class="container" style="background-color: #f1f1f1;">
+      <button class="cancelbtn" onclick="document.getElementById('id01').style.display='none'" type="button">Cancel</button>
+      <span class="psw">Forgot <a href="https://www.blogger.com/blogger.g?blogID=5590103281405947686#">password?</a></span>
+    </div>
+</form>
+</div>
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
 </body>
 </html>
